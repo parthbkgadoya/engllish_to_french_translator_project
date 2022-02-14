@@ -20,4 +20,4 @@ df = df.assign(translation = df.apply(lambda x: {'en': x.english, 'fr': x.french
 
 df.rename({'index':'id'}, axis=1, inplace=True)
 dfnew = df.drop(['english', 'french'], axis=1)
-dfnew.to_json("small_data_DS_format_v2.json",orient='records', lines=True)
+dfnew.to_json("small_data_DS_format.json",orient='records', lines=True)
